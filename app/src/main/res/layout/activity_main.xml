@@ -17,8 +17,7 @@
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="25dp">
+        android:layout_alignParentStart="true">
 
         <ImageView
             android:layout_width="match_parent"
@@ -26,63 +25,91 @@
             app:srcCompat="@drawable/bnsrlogo"
             android:id="@+id/imageView12" />
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal"
-            android:layout_marginTop="50dp">
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp">
 
             <TextView
-                android:text="BuyerID"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView8"
-                android:textSize="50sp"
-                android:layout_width="wrap_content" />
-
-            <EditText
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:ems="2"
-                android:id="@+id/editText8"
-                android:textSize="50sp"
-                android:maxLength="2"
+                android:text="Buyer"
                 android:layout_width="wrap_content"
-                android:textAlignment="center" />
-        </LinearLayout>
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/textView"
+                android:textSize="50sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="30dp" />
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:text=":B"
+                android:textSize="50sp"
+                android:layout_alignBaseline="@+id/textView"
+                android:layout_alignBottom="@+id/textView"
+                android:layout_centerHorizontal="true" />
 
             <TextView
                 android:text="Password"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView"
-                android:textSize="50sp" />
+                android:id="@+id/textView3"
+                android:textSize="50sp"
+                android:layout_below="@+id/textView"
+                android:layout_alignLeft="@+id/textView"
+                android:layout_alignStart="@+id/textView"
+                android:layout_marginTop="40dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="2"
+                android:id="@+id/editText"
+                android:layout_alignBaseline="@+id/textView2"
+                android:layout_alignBottom="@+id/textView2"
+                android:layout_toRightOf="@+id/textView2"
+                android:layout_toEndOf="@+id/textView2"
+                android:textSize="50sp"
+                android:maxLength="2" />
 
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="numberPassword"
-                android:ems="4"
+                android:ems="3"
                 android:id="@+id/editText2"
+                android:layout_alignBaseline="@+id/textView4"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_toRightOf="@+id/textView2"
+                android:layout_toEndOf="@+id/textView2"
                 android:textSize="50sp"
-                android:textAlignment="center" />
+                android:maxLength="4" />
 
-        </LinearLayout>
+            <TextView
+                android:text=":"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:textSize="50sp"
+                android:layout_alignBaseline="@+id/textView3"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2" />
 
-        <Button
-            android:text="Log In"
-            android:layout_height="100dp"
-            android:id="@+id/button"
-            android:textSize="50sp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="50dp"
-            android:layout_width="300dp" />
+            <Button
+                android:text="Log In"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:id="@+id/button3"
+                android:layout_marginTop="54dp"
+                android:layout_below="@+id/editText2"
+                android:layout_centerHorizontal="true"
+                android:textSize="50sp" />
+        </RelativeLayout>
 
     </LinearLayout>
 
