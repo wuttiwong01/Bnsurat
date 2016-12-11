@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -10,18 +11,79 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.number27.bnsurat.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/textView" />
-
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/textView"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bnsrlogo"
+            android:id="@+id/imageView12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:text="BuyerID"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8"
+                android:textSize="50sp"
+                android:layout_width="wrap_content" />
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="2"
+                android:id="@+id/editText8"
+                android:textSize="50sp"
+                android:maxLength="2"
+                android:layout_width="wrap_content"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:text="Password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:textSize="50sp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"
+                android:ems="4"
+                android:id="@+id/editText2"
+                android:textSize="50sp"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <Button
+            android:text="Log In"
+            android:layout_height="100dp"
+            android:id="@+id/button"
+            android:textSize="50sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_width="300dp" />
+
+    </LinearLayout>
+
 </RelativeLayout>
