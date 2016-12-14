@@ -68,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="number"
                 android:ems="3"
-                android:id="@+id/editText"
+                android:id="@+id/etxtbuyerid"
                 android:layout_alignBaseline="@+id/textView2"
                 android:layout_alignBottom="@+id/textView2"
                 android:layout_toRightOf="@+id/textView2"
@@ -81,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="numberPassword"
                 android:ems="3"
-                android:id="@+id/editText2"
+                android:id="@+id/etxtpassword"
                 android:layout_alignBaseline="@+id/textView4"
                 android:layout_alignBottom="@+id/textView4"
                 android:layout_toRightOf="@+id/textView2"
@@ -104,11 +104,12 @@
                 android:text="Log In"
                 android:layout_width="300dp"
                 android:layout_height="100dp"
-                android:id="@+id/button3"
+                android:id="@+id/bntLogin"
                 android:layout_marginTop="54dp"
-                android:layout_below="@+id/editText2"
+                android:layout_below="@+id/etxtpassword"
                 android:layout_centerHorizontal="true"
-                android:textSize="50sp" />
+                android:textSize="50sp"
+                android:onClick="login" />
         </RelativeLayout>
 
     </LinearLayout>
